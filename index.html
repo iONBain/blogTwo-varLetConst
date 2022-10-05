@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogTwo | BA</title>
+    <link rel="stylesheet" href="styleBlog.css">
+    <link rel="icon" type="image/x-icon" href="/images/ba_text_icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/asset/favi-blog.ico">
+    
+</head>
+<body>
+    <section class="sectionC">
+        <img src="/blogImg/1.png" id="img1"  alt="first" class="bgAnimation" ani-speed="-1">
+        <img src="/blogImg/2.png" id="img2"  alt="first" class="bgAnimation" ani-speed="-3">
+        <img src="/blogImg/3.png" id="img3"  alt="first" class="bgAnimation" ani-speed="2">
+        <img src="/blogImg/4.png" id="img4"  alt="first" class="bgAnimation" ani-speed="1">
+        <img src="/blogImg/5.png" id="img5"  alt="first" class="bgAnimation" ani-speed="3">
+        <img src="/blogImg/6.png" id="img6"  alt="first" class="bgAnimation" ani-speed="-2">
+        <img src="/blogImg/7.png" id="img7"  alt="first" class="bgAnimation" ani-speed="4">
+        <img src="/blogImg/8.png" id="img8"  alt="first" class="bgAnimation" ani-speed="-5">
+        <img src="/blogImg/9.png" id="img9"  alt="first" class="bgAnimation" ani-speed="-3">
+        <img src="/blogImg/10.png" id="img10"  alt="first" class="bgAnimation" ani-speed="2">
+        <img src="/blogImg/11.png" id="img11"  alt="first" class="bgAnimation" ani-speed="-3">
+        <img src="/blogImg/12.png" id="img12"  alt="first" class="bgAnimation" ani-speed="4">
+        <img src="/blogImg/13.png" id="img13"  alt="first" class="bgAnimation" ani-speed="-3">
+        <img src="/blogImg/14.png" id="img14"  alt="first" class="bgAnimation" ani-speed="4">
+        <img src="/blogImg/15.png" id="img15"  alt="first" class="bgAnimation" ani-speed="-1">
+        <img src="/blogImg/16.png" id="img16"  alt="first" class="bgAnimation" ani-speed="3">
+        <img src="/blogImg/17.png" id="img17"  alt="first" class="bgAnimation" ani-speed="2">
+        <img src="/blogImg/18.png" id="img18"  alt="first" class="bgAnimation" ani-speed="3">
+        <img src="/blogImg/19.png" id="img19"  alt="first" class="bgAnimation" ani-speed="2">
+        <img src="/blogImg/20.png" id="img20"  alt="first" class="bgAnimation" ani-speed="-1">
+        <img src="/blogImg/21.png" id="img21"  alt="first" class="bgAnimation" ani-speed="3">
+        <img src="/blogImg/22.png" id="img22"  alt="first" class="bgAnimation" ani-speed="-1">
+        <img src="/blogImg/23.png" id="img23"  alt="first" class="bgAnimation" ani-speed="2">
+    </section>
+    <div class="griddd">
+    <nav class="navigation">
+        <div class="nav-brand">blogBhaskar | <span class="black">Infamous discussion on var, let, const in JS</span></div>
+    </nav>
+   <div class="blurbox">
+    
+   </div>
+    <div class="container container-center">
+        <p class="para-item">Main purpose of this blog is to clear my understanding of the difference between var, let and const. These data-types are sometimes confusing and Let's finally put an end to this for me as well as for yourself.</p>
+        <p class="para-item"><strong>Headings discussed:- </strong><span class="green">scope, hoisting, re-initialization and re-assigning (updation)</span></p>
+        
+        <section>
+            <!-- scope definition -->
+            <p class="list-item">
+                <strong class="list-header green">Scope: </strong> Scope in simple terms means where these variables are accessible. The limit of the availability of a particular variable. Block scoped variables are better than the globally scoped as they don't update/refer to other same name variables.
+            </p>
+            <!-- hoisting definition -->
+            <p class="list-item">
+                <strong class="list-header green">Hoisting: </strong> It means that we can define a variable before its declaration. Accessing variables in which hoisting is allowed gives a value undefined. If a declaration type doesn't allow hoisting, then Reference-Error will be thrown.
+            </p>
+            <!-- re-initialisation definition -->
+            <p class="list-item">
+                <strong class="list-header green">Re-initialization: </strong>  Re-initialization of a variable means that you can initialize the variable again. var is the only declaration which allows this feature, because it was there before ES6.
+            </p>
+            <!-- re-assigning definition -->
+            <p class="list-item">
+                <strong class="list-header green">Re-assigning: </strong> Re-assigning is basically updation of variables, to reassign the value of a variable. Just the const declaration type doesn't allow the re-assigning feature.
+            </p>
+            
+        </section>
+        
+        <div class="spacer"></div>
+
+
+        <p class="para-item"><strong>Headings discussed:- </strong><span class="green">var, let, const</span></p>
+        
+        <section>
+            <!-- var definition -->
+            <strong class="list-item list-header green">var: </strong>
+            <p class="list-item fa-italic">In short, global/function scoped, can be redeclared and updated, and are hoisted to the top of their scope with undefined as the initial value. </p>
+            <p class="list-item fa-italic"> It is also the most used declaration type of variables. Before ES6, var was used. However, some issues are associated with var variables, and we will be looking into those, but let's first discuss other declaration variable types on a high level.  </p>
+            <!-- let definition -->
+            <strong class="list-item list-header green">let: </strong>
+            <p class="list-item fa-italic">It is a block scoped, can be updated but cannot be re-initialised. It is also hoisted to the top of their scope, but no initial value is defined. </p>
+            <p class="list-item fa-italic"> It is the improvement to var declaration and also solves the issues of the var type declaration.  </p>
+            <!-- const definition -->
+            <strong class="list-item list-header green">const: </strong>
+            <p class="list-item fa-italic">Everything similar to let declaration, but cannot be updated. So, block scoped, cannot be updated neither re-intialised. Hoisted to the top of their scope, but with no initial value.</p>
+            <p class="list-item fa-italic"> Mainly used for constants, like fixed URL to fetch, or some fixed numbers such as "pie","g" or "e".  </p>
+            
+            <div class="spacer"></div>
+        </section>
+        <p class="para-item">Summarized var, let, const in tabular format as follows:-</p>
+        <!-- <div class="flex-col">
+            
+            <img src="/outputs/code1.png" alt="" srcset="" class="outputs">
+            <img src="/outputs/grad1.png" alt="" srcset="" class="outputs">
+        </div> -->
+        <section class="tabledata">
+            
+            <table class="table">
+                <tr>
+                  <th>Parameters</th>
+                  <th>var</th>
+                  <th>let</th>
+                  <th>const</th>
+                </tr>
+                <tr>
+                  <td>Scope</td>
+                  <td>Global/ Function</td>
+                  <td>Block</td>
+                  <td>Block</td>
+                </tr>
+                <tr>
+                  <td>Hoisting</td>
+                  <td>At the top of their scope</td>
+                  <td>Not Allowed</td>
+                  <td>Not Allowed</td>
+                </tr>
+                <!-- <tr>
+                  <td>Initialized value</td>
+                  <td>undefined</td>
+                  <td>reference error</td>
+                  <td>should be Initialized with some user defined value</td>
+                </tr> -->
+                <tr>
+                  <td>Re-assigning</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Re-initialization</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>No</td>
+                </tr>
+              </table>
+              
+            </section>
+            
+        <div class="spacer"></div>
+        <p class="para-item">And that's a wrap for today. Hope you got clarity in the declaration types of variables and constants. Now, choose wisely the correct declarations in your next project ! If you still have any doubt or want to provide any suggestions,
+            <a rel="noopener" target="_blank" href="https://twitter.com/BAgrawal6" class="s-link">let's connect !</a> </p>
+        <p class="para-item"><strong>You can discover more of topic from one of blog sites:-</strong> <a class="p-link widthMore" rel="noopener" href="https://hashnode.com/n/javascript" target="_blank">hashnode.com</a></a></p>
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    
+         
+    </div>
+
+
+
+
+    <!-- footer  -->
+    <footer >
+        <div>
+
+            <div class="footer-header">Let's <span class="black"> Connect </span> </div>
+            <ul class="list-non-bullet">
+                <!-- <li class="list-item-inline"><a rel="noopener" target="_blank" href="https://github.com/iONBain" class="link"> <i -->
+                            <!-- class="fa-brands black fa-github"></i> GitHub</a></li> -->
+                <li class="list-item-inline"><a rel="noopener" target="_blank" href="https://twitter.com/BAgrawal6" class="link"><i
+                            class="fa-brands black fa-twitter"></i> Twitter</a> </li>
+                <li class="list-item-inline"><a rel="noopener" target="_blank"
+                        href="https://www.linkedin.com/in/bhaskar-agrawal-598b5a16b/" class="link"><i
+                            class="fa-brands black fa-linkedin-in"></i> LinkedIn</a> </li>
+                <li class="list-item-inline"><a rel="noopener" target="_blank" href="https://www.instagram.com/ion_bain/" class="link"><i
+                            class="fa-brands black fa-instagram"></i> Instagram</a> </li>
+            </ul>
+            <div >Assembled and Designed by -<a rel="noopener" target="_blank" href="https://github.com/iONBain" class="link linkNopad"><span class="black"> <i class="fa-brands black fa-github"></i> iONBain</span></a></div>
+        </div>
+    </footer>
+
+
+</div>
+    <script src="blogApp.js"></script>
+</body>
+</html>
