@@ -8,7 +8,6 @@ Not clear what is difference between var, let and const? Check out my second blo
 
 
 > Technologies/Libraries used :-
-* Vanilla Javascript
 * CSS
 * HTML
 
